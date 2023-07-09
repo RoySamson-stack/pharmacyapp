@@ -18,6 +18,12 @@ The system main menu prompts the user to choose any of the following:
 - Pickup Screen
 - Order Screen
 
+## Screenshots
+<img width="1440" alt="Screenshot 2023-07-09 at 20 01 09" src="https://github.com/EuniceKiingati/nativepharmacy-app/assets/47145776/8b5cf602-1f6f-4300-985b-fa1383cfa62d">
+
+<img width="1440" alt="Screenshot 2023-07-09 at 20 01 24" src="https://github.com/EuniceKiingati/nativepharmacy-app/assets/47145776/6c8c90e3-07b4-433c-925b-ab9e7a6633f4">
+
+
 
 
 
