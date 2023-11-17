@@ -21,15 +21,18 @@ import { getProducts } from "../ProductReducer";
 import { useNavigation } from "@react-navigation/native";
 import { collection, getDoc, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
+import CartScreen from "./CartScreen"; 
+
+
 
 const Homescreen = () => {
   
+  const navigation = useNavigation();
   const cart = useSelector((state) => state.cart.cart);
   const [items,setItems] = useState([]);
   const total = cart
     .map((item) => item.quantity * item.price)
     .reduce((curr, prev) => curr + prev, 0);
-  const navigation = useNavigation();
 
   console.log(cart);
   const [displayCurrentAddress, setDisplayCurrentAddress] = useState(
@@ -180,6 +183,26 @@ const Homescreen = () => {
 
             <Text>{displayCurrentAddress}</Text>
           </View>
+          <Pressable
+                onPress={() => navigation.navigate("Cart")} 
+                style={{
+                  backgroundColor: "#088F8F",
+                  padding: 5,
+                  marginBottom: 30,
+                  margin: 3,
+                  borderRadius: 7,
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Image
+              style={{ width: 20, height: 20, borderRadius: 20 }}
+              source={{
+                uri: "https://img.icons8.com/ios/50/shopping-cart--v1.png",
+              }}
+            />
+          </Pressable>
           <Pressable  onPress={() => navigation.navigate("Profile")} style={{ marginLeft: "auto", marginRight: 7 }}>
             <Image
               style={{ width: 40, height: 40, borderRadius: 20 }}

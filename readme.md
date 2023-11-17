@@ -1,44 +1,57 @@
-# Online Pharmacy App 
+# Pharmacy App
 
-This is an ios app built using react-native and firebase. At the moment, it only has the client side, but the long term plan is to include other users like the admin, and partners. 
+The Pharmacy App is a React Native mobile application that allows customers to conveniently purchase medicines and access pharmacy services through their smartphones. This app provides a user-friendly interface, secure payment options, and a range of features to enhance the pharmacy experience.
 
 ## Features
-The system main menu prompts the user to choose any of the following:
-1. Login, SignUp, Signout
-2. View products and services
-3. Add-to-Cart
-4. Entering address details and proceeding to checkout
 
-## Screens
-- Login screen
-- Signup Screen
-- Profile Screen
-- Homescreen
-- Cart Screen
-- Pickup Screen
-- Order Screen
+- **Browse Medicines:** Users can browse and search for medicines by name, category, or prescription.
 
-## Screenshots
-<img width="1440" alt="Screenshot 2023-07-09 at 20 01 09" src="https://github.com/EuniceKiingati/nativepharmacy-app/assets/47145776/8b5cf602-1f6f-4300-985b-fa1383cfa62d">
+- **Order Medicines:** Place orders for required medicines directly from the app.
 
-<img width="1440" alt="Screenshot 2023-07-09 at 20 01 24" src="https://github.com/EuniceKiingati/nativepharmacy-app/assets/47145776/6c8c90e3-07b4-433c-925b-ab9e7a6633f4">
+- **Prescription Upload:** Users can upload prescriptions for prescribed medicines.
 
+- **Secure Payments:** Multiple secure payment options for a seamless checkout experience.
 
+- **Order Tracking:** Track the status of orders and receive real-time updates.
 
+- **Service Requests:** Users can request additional pharmacy services or assistance through the app.
 
+## Installation
 
+Follow these steps to set up and run the Pharmacy App on your local development environment:
 
+1. **Clone the Repository:**
 
+   git clone https://github.com/RoySamson-stack/pharmacyapp
 
+2. **Navigate to Project Directory:**
 
+   cd pharmacy-app
 
+3. **Install Dependencies:**
 
-### How to run this app
-1.Install git
+   npm install
 
+4. **Configure Environment Variables:**
 
- To install all the dependencies, use node package manager and run the command
+   Create a `.env` file in the root of your project and configure necessary variables (API keys, environment settings, etc.).
 
-Run the project using  "npx expo start" .Runs your app in development mode.
+5. **Run the Application:**
 
+   npx expo run 
 
+   Follow the instructions in the terminal to run the app on an emulator or device.
+
+## Contributing
+
+We welcome contributions to improve the Pharmacy App. If you have suggestions, find bugs, or want to contribute new features, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature`.
+3. Make changes and commit them: `git commit -m 'Add your feature'`.
+4. Push to the branch: `git push origin feature/your-feature`.
+5. Submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.md).
