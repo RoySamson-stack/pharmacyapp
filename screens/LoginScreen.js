@@ -39,13 +39,22 @@ useEffect(()=>{
 }, [])
   
 
-  const login = () => {
-    signInWithEmailAndPassword(auth,email,password).then((userCredential) => {
-      console.log("user credential",userCredential);
+const login = () => {
+  signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
       const user = userCredential.user;
-      console.log("user details",user)
+      console.log("user details", user);
     })
-  }
+    .catch((error) => {
+      if (error.code === "auth/user-not-found" || error.code === "auth/wrong-password") {
+        // User not found or wrong password during login
+        Alert.alert("Login Failed", "Invalid email or password. Please try again.");
+      } else {
+        console.error("Login Error:", error.message);
+        Alert.alert("Login Failed", "An error occurred during login.");
+      }
+    });
+};
 
 
   return (

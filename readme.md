@@ -36,10 +36,9 @@ The system main menu prompts the user to choose any of the following:
 ### How to run this app
 1.Install git
 
-2.Clone the [repo](https://github.com/EuniceKiingati/.git)
 
-3. To install all the dependencies, use node package manager and run the command
+ To install all the dependencies, use node package manager and run the command
 
-4.Run the project using  "npx expo start" .Runs your app in development mode.
+Run the project using  "npx expo start" .Runs your app in development mode.
 
 

@@ -8,14 +8,14 @@ import {getFirestore} from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAwBpYM1VFXiyJ-KXvBuAJPqFi29Y_DE50",
-  authDomain: "drug-store-64eff.firebaseapp.com",
-  projectId: "drug-store-64eff",
-  storageBucket: "drug-store-64eff.appspot.com",
-  messagingSenderId: "1043453024914",
-  appId: "1:1043453024914:web:50d4f739ab447a9be7e44b"
+  apiKey: "AIzaSyDTlC9rTkHUWC2g8WWwSZgZiuYeqETsnAQ",
+  authDomain: "mobile-app-51432.firebaseapp.com",
+  projectId: "mobile-app-51432",
+  storageBucket: "mobile-app-51432.appspot.com",
+  messagingSenderId: "777207287789",
+  appId: "1:777207287789:web:e9685247b28f8da2a2a1e4",
+  measurementId: "G-S57R3SJHCW"
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 

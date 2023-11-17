@@ -41,6 +41,14 @@ const RegisterScreen = () => {
           email:user,
           phone:phone
         })
+        .catch((error) => {
+          if (error.code === "auth/email-already-in-use") {
+            Alert.alert("Registration Failed", "Email is already in use.");
+          } else {
+            console.error("Registration Error:", error.message);
+            Alert.alert("Registration Failed", "An error occurred during registration.");
+          }
+        });
       })
  }
     
